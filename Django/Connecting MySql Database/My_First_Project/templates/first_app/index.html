@@ -1,0 +1,11 @@
+{% extends "first_app/base.html" %}
+
+
+
+{% block body_block %}
+{% load my_filters %}
+
+
+<h1>{{sample_text|custom_filter:"New Addition"}}</h1>
+
+{% endblock %}

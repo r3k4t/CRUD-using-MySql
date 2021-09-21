@@ -1,0 +1,24 @@
+Django Model Query
+Musician.objects.all()
+
+---------------------------------------
+SQL:
+SELECT * FROM Musician WHERE id = 1
+
+Django Model Query:
+Musician.objects.get(pk=1)
+
+-----------------------------------------
+SQL:
+SELECT * FROM Musician WHERE instrument='Guitar'
+
+Django Model Query:
+Musician.objects.filter(instrument='Guitar')
+
+-----------------------------------------
+SQL:
+SELECT * FROM Album WHERE artist_id = 1
+
+Django Model Query:
+Album.objects.filter(artist=1)
+-----------------------------------------
